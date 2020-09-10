@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+
+  <!--seo-->
+  <meta name="description" content="bitflyerとcoindeskのbitcoin価格をリアルタイムで表示するサイトです">
+  <meta name="keywords" content="bitcoin,bitcoin価格,bitcoinsearch">
+
+   <!--アイコン設定-->
+  <link rel="shortcut icon" href="img/b.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/b.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="img/b.png" sizes="192x192">
+
+  <link rel="stylesheet" href="r.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Real time bitcoin search</title>
+</head>
+
+<body>
+
+
+  <br>
+  <br>
+
+
+
+  <div class="rtbs_title">
+
+
+    <h1>Real time bitcoin search</h1>
+
+
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+  <div class="rtbs_sub_title">
+    <h1>bitflyer Bitcoin Price </h1>
+  </div>
+  <br>
+  <div id="appB">
+
+  <div class="rtbs_sub_text"><h2>※bitflyer(日本国内最大級の仮想通貨取引所)のBitcoinの円価格</h2></div> 
+
+  <br>
+  <br>
+ 
+
+
+
+<div class="rtbs_contents">
+    <h3>JP販売価格</h3>
+    <br>
+    <br>
+    <p class='p-ask'>￥{{ info.ask}}</p>
+    <br>
+    <br>
+    <h3>JP買取価格</h3>
+    <br>
+    <br>
+    <p class='p-bid'>￥{{ info.bid}}</p>
+    <br>
+    <br>
+    <h3>JP中間値</h3>
+    <br>
+    <br>
+    <p class='p-mid'>￥{{ info.mid}}</p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+  </div>
+
+  </div>
+
+
+  <div class="rtbs_btn">
+
+    <a href="file:///C:/Users/kariy/Desktop/API_site/index.html" class="btn btn-solid-silver">RELOAD</a>
+
+   
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+  <div id="appA">
+
+    <div class="rtbs_sub_title">
+      <h1>coindesk Bitcoin Price </h1>
+    </div>
+    <br>
+    
+
+
+
+    <div class="rtbs_sub_text"><h2>※coindesk(ビットコインとデジタル通貨に特化したニュースサイト)のBitcoinの外貨販売価格</h2></div>
+    <br>
+    <br>
+
+
+
+    <div class="rtbs_contents">
+    <h3>USD</h3>
+    <br>
+    <br>
+    <p class='p-USD'> ${{ info.USD.rate}}</p>
+    <br>
+    <br>
+    <h3>GBP</h3>
+    <br>
+    <br>
+    <p class='p-GBP'> £{{ info.GBP.rate}}</p>
+    <br>
+    <br>
+    <h3>EUR</h3>
+    <br>
+    <br>
+    <p class='p-EUR'> €{{ info.EUR.rate}}</p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    </div>
+
+    <div class="rtbs_btn">
+
+      <a href="file:///C:/Users/kariy/Desktop/API_site/index.html" class="btn btn-solid-silver">RELOAD</a>
+  
+     
+    </div>
+    <br>
+    <br>
+
+
+    <footer>
+
+      <div class="rtbs_last_title">
+        <h4>COPYRIGHT</h4>
+      </div>
+      <br>
+      <br>
+      <div　class="rtbs_copyright_text">©Akihito2020</div>
+    </footer>
+
+    <br>
+    <br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

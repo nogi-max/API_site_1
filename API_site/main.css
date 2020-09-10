@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+body {
+    background-image: url("img/coin.jpg");
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode:color;
+    background-size: contain;
+ 
+    
+/*title*/
+
+}
+.rtbs_title,.rtbs_sub_title,.rtbs_last_title,
+.rtbs_sub_text,.rtbs_contents,.rtbs_btn,.rtbs_copyright_text{
+
+    text-align: center;
+
+}
+
+.rtbs_title{
+
+    
+    font-size: 5rem;
+}
+
+.rtbs_sub_title{
+
+    font-size: 2.2rem;
+    border: double 0.5rem #ccc;
+
+
+
+}
+.rtbs_last_title{
+
+
+    font-size: 1rem;
+    border: double 0.5rem #ccc;
+
+
+
+
+}
+
+
+
+/*sub_text*/
+
+
+.rtbs_sub_text{
+
+
+    
+    font-size: 0.4rem;
+
+
+
+}
+
+/*contents*/
+
+.p-ask,.p-bid,.p-mid,.p-USD,
+.p-GBP,.p-EUR{
+
+
+
+    font-weight: bold;
+    font-size: 3.5rem;
+
+
+
+}
+
+h3{
+    font-size: 0.8rem;
+    border: double 0.25rem #ccc;
+}
+
+
+/*btn*/
+
+a.btn-solid-silver {
+    color: #000;
+    border-top: 4px solid #d8dcdc;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #333;
+    border-left: 4px solid #868888;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(135deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    background-image: linear-gradient(-45deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  
+  a.btn-solid-silver:hover {
+    text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
+  }
+
+
+@media screen and (max-width: 767px) {
+    /*（ここにモバイル用スタイルを記述）*/
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1280px) {
+    /* （ここにタブレット用スタイルを記述）*/
+    html {
+        height: 100%;
+    }
+    body {
+        height: 100%;
+    }
+}
